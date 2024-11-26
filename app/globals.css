@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary-color: #25284c;
+  --secondary-color: #fefefe;
+  --border-primary-color: ##222240;
+  --background-primary-color: #191a33;
+}
