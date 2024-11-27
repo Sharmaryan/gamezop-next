@@ -1,18 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import { GameCard } from "./GameCard";
-import { GroupedGames } from "../types/filterGames";
-import { GameCardContainer } from "./GameCardContainer";
+import { GameCard } from "../GameCard/GameCard";
+import { GameCardContainer } from "../GameCardContainer/GameCardContainer";
+import { GamesListProps } from "./GamesList.types";
 
 export const GamesList = ({
   games,
   category,
   icon,
-}: {
-  games: GroupedGames;
-  category: string;
-  icon: string;
-}) => {
+}:GamesListProps) => {
   const [visibleCount, setVisibleCount] = useState(4);
   const handleShowMore = () => {
     setVisibleCount((prevCount) => prevCount + 4);

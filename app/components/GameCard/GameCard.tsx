@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { GameCardProps } from "../types/gameCard";
-import { BLUR_IMAGE_URL } from "../lib/blurImage";
+import { BLUR_IMAGE_URL } from "../../lib/blurImage";
 import { FaGamepad, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
-import Tooltip from "./Tooltip/Tooltip";
+import Tooltip from "../Tooltip/Tooltip";
+import { GameCardProps } from "./GameCard.types";
 
 export const GameCard = ({
   assets,
