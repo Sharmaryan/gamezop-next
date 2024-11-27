@@ -10,6 +10,7 @@ const Tooltip = ({ children, tooltipText }: TooltipProps) => {
       className={styles.tooltipContainer}
       onMouseEnter={() => setIsVisible(true)}
       onMouseLeave={() => setIsVisible(false)}
+      aria-label="tooltip"
     >
       <div className={styles.tooltipChild}>{children}</div>
       {isVisible && <span className={styles.tooltipText}>{tooltipText}</span>}

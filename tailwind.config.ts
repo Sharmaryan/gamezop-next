@@ -14,6 +14,8 @@ export default {
         border_primary: "var(--border-primary-color)",
         background_primary: "var(--background-primary-color)",
         tooltip_color: "var(--tooltip-bg-color)",
+        success:"var(--success-color)",
+        warning:"var(--warning-color)",
       },
     },
   },

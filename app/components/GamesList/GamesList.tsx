@@ -12,7 +12,7 @@ export const GamesList = ({ games, category, icon }: GamesListProps) => {
 
   return (
     <GameCardContainer categoryName={category} icon={icon}>
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-10 items-center">
         <div className="grid grid-cols-2 justify-center md:gap-2 xl:grid-cols-4 xl:gap-4">
           {games[category].slice(0, visibleCount)?.map((item) => (
             <GameCard {...item} key={item.code} />
