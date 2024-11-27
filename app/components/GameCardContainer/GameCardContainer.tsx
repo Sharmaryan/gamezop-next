@@ -8,12 +8,12 @@ export const GameCardContainer = ({
   icon,
 }: GameCardContainerProps) => {
   return (
-    <div className="px-4 py-6 border-2 rounded-3xl border-primary bg-primary max-w-[1340px] mx-auto">
+    <div className="border-2 p-4 mx-auto rounded-3xl border-primary bg-primary md:p-10 xl:px-2">
       <div className="flex gap-2 items-center">
         <Icon name={icon} />
-        <p className="text-2xl font-extrabold text-secondary">{categoryName}</p>
+        <p className="text-md font-extrabold text-secondary md:text-xl xl:text-2xl">{categoryName}</p>
       </div>
-      <div>{children}</div>
+      <div className="mt-4">{children}</div>
     </div>
   );
 };

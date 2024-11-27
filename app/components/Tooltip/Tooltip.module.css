@@ -18,5 +18,11 @@
   z-index: 1;
   white-space: nowrap;
   border-radius: 1rem;
+  font-size: 10px;
 }
 
+@media (min-width: 768px) {
+  .tooltipText {
+    font-size: 12px;
+  }
+}

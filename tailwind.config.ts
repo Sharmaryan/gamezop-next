@@ -13,7 +13,7 @@ export default {
         secondary: "var(--secondary-color)",
         border_primary: "var(--border-primary-color)",
         background_primary: "var(--background-primary-color)",
-        tooltip_color: "var(--tooltip-bg-color)"
+        tooltip_color: "var(--tooltip-bg-color)",
       },
     },
   },
