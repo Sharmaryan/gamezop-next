@@ -12,7 +12,8 @@ export default {
         primary: "var(--primary-color)",
         secondary: "var(--secondary-color)",
         border_primary: "var(--border-primary-color)",
-        background_primary: "var(--background-primary-color)"
+        background_primary: "var(--background-primary-color)",
+        tooltip_color: "var(--tooltip-bg-color)"
       },
     },
   },
