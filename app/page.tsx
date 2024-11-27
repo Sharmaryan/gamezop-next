@@ -1,9 +1,9 @@
 import { getData } from "./lib/data";
-import { GameCardProps } from "./types/gameCard";
 import { filterGamesByCategories } from "./lib/filterGamesByCategories";
 import { Suspense } from "react";
-import { GamesList } from "./components/GamesList";
+import { GamesList } from "./components/GamesList/GamesList";
 import { gameCategoryIcons } from "./lib/iconsList";
+import { GameCardProps } from "./components/GameCard/GameCard.types";
 
 export default async function Home() {
   const response: {
