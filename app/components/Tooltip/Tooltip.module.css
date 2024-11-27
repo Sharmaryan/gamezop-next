@@ -1,0 +1,22 @@
+.tooltipContainer {
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.tooltipChild {
+  width: fit-content;
+}
+
+.tooltipText {
+  background-color: var(--tooltip-bg-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 0.313rem 0.625rem;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 1;
+  white-space: nowrap;
+  border-radius: 1rem;
+}
+
