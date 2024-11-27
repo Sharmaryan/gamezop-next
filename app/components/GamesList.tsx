@@ -21,15 +21,9 @@ export const GamesList = ({
   return (
     <GameCardContainer categoryName={category} icon={icon}>
       <div className="flex flex-col gap-4 items-center">
-        <div className="flex gap-2 mt-5 flex-wrap jus">
+        <div className="flex gap-2 mt-5 flex-wrap">
           {games[category].slice(0, visibleCount)?.map((item) => (
-            <GameCard
-              key={item.code}
-              assets={item.assets}
-              name={item.name}
-              description={item.description}
-              tags={item.tags}
-            />
+            <GameCard {...item} key={item.code}/>
           ))}
         </div>
 
