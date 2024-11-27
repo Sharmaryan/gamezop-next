@@ -1,31 +1,17 @@
-import { getData } from "./lib/data";
-import { filterGamesByCategories } from "./lib/filterGamesByCategories";
 import { Suspense } from "react";
-import { GamesList } from "./components/GamesList/GamesList";
-import { gameCategoryIcons } from "./lib/iconsList";
-import { GameCardProps } from "./components/GameCard/GameCard.types";
+import { Header } from "./components/Header/Header";
+import { Loader } from "./components/Loader/Loader";
+import dynamic from "next/dynamic";
+const GameSection = dynamic(
+  () => import("./components/GameSection/GameSection")
+);
 
-export default async function Home() {
-  const response: {
-    games: GameCardProps[];
-  } = await getData();
-
-  const games = filterGamesByCategories(response.games);
-  const categories = Object.keys(games);
-
+export default function Home() {
   return (
-    <div className="bg-background_primary">
-      <Suspense fallback={<h1>loading...</h1>}>
-        <div className="flex flex-col gap-10">
-          {categories.map((category, index) => (
-            <GamesList
-              key={category}
-              games={games}
-              category={category}
-              icon={gameCategoryIcons[index]}
-            />
-          ))}
-        </div>
+    <div >
+      <Header />
+      <Suspense fallback={<Loader />}>
+        <GameSection />
       </Suspense>
     </div>
   );
