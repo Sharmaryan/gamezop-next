@@ -4,7 +4,7 @@ import { Button } from "../Button/Button";
 
 export const Filter = ({ categories, handleCategory }: FilterProps) => {
   return (
-    <div className="flex flex-wrap gap-2 bg-background_primary">
+    <div className="flex px-6 flex-wrap gap-2 max-w-[1240px] mx-auto xl:px-0">
       {categories.map((category) => (
         <Button
           key={category}

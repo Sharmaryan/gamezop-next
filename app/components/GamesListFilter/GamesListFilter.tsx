@@ -17,9 +17,11 @@ export const GamesListFilter = ({
     setSelectedCategory(category);
   };
   return (
-    <>
-      <Filter categories={categories} handleCategory={handleCategory} />
-      <div className="flex flex-col gap-10 bg-background_primary py-10">
+    <div className="bg-background_primary">
+      <div className="py-5 sticky top-16 z-50">
+        <Filter categories={categories} handleCategory={handleCategory} />
+      </div>
+      <div className="flex flex-col gap-10 pb-5">
         {selectedCategory ? (
           <GamesList
             games={games}
@@ -38,6 +40,6 @@ export const GamesListFilter = ({
           ))
         )}
       </div>
-    </>
+    </div>
   );
 };
