@@ -21,14 +21,13 @@ export const GamesListFilter = ({ games }: { games: GroupedGames }) => {
   return (
     <main className="bg-background_primary">
       <div className="py-5 sticky top-16 z-50">
-        <Filter categories={categories} handleCategory={handleCategory} />
+        <Filter categories={categories} handleCategory={handleCategory} selectedCategory={selectedCategory}/>
       </div>
       <div className="flex flex-col gap-10 pb-5">
         {selectedCategory ? (
           <GamesList
             games={games}
             category={selectedCategory}
-            icon={gameCategoryIcons[0]}
             showAllGames={true}
           />
         ) : (

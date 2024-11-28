@@ -30,7 +30,7 @@ export const GamesList = ({
         </div>
 
         {visibleCount < 30 && !showAllGames && (
-          <Button aria-label="show more games" onClick={handleShowMore}>
+          <Button aria-label="show more games" onClick={handleShowMore} className="bg-secondary font-bold py-2 px-3 text-xs w-fit rounded-xl md:px-4 md:py-3 md:text-base">
             Show More
           </Button>
         )}
