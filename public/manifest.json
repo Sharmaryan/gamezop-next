@@ -1,0 +1,28 @@
+{
+    "name": "Gamezop : Play games daily",
+    "short_name": "Gamezop",
+    "theme_color": "#191a33",
+    "background_color": "#191a33",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+          "src": "icons/favicon-192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+      },
+      {
+          "src": "icons/favicon-256.png",
+          "type": "image/png",
+          "sizes": "256x256"
+      },
+      {
+          "src": "icons/favicon-512.png",
+          "type": "image/png",
+          "sizes": "512x512"
+      }
+  ],
+    "splash_pages": null
+  }
