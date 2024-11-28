@@ -20,7 +20,7 @@ export const Footer = () => {
           </div>
           <div className="flex flex-col gap-4">
             {footerMock.description.map((description) => (
-              <div key={description.id} className="text-primary_light">
+              <div key={description.id} className="text-secondary">
                 {description.content}
 
                 {description.link && (
@@ -31,13 +31,13 @@ export const Footer = () => {
               </div>
             ))}
           </div>
-          <p className="text-primary_light font-bold">
+          <p className="text-secondary font-bold">
             © 2024 Advergame Technologies Pvt. Ltd. (&quot;ATPL&quot;). Gamezop ® &
             Quizzop ® are registered trademarks of ATPL
           </p>
         </div>
       </div>
-      <div className="py-3 px-6 max-w-[1240px] mx-auto text-xs text-primary_light md:text-base md:py-6 xl:px-0 xl:py-8">
+      <div className="py-3 px-6 max-w-[1240px] mx-auto text-xs text-secondary md:text-base md:py-6 xl:px-0 xl:py-8">
         Property ID: cfuucl7YgA
       </div>
     </footer>
