@@ -8,11 +8,11 @@ const GameSection = dynamic(
 
 export default function Home() {
   return (
-    <div >
+    <>
       <Header />
       <Suspense fallback={<Loader />}>
         <GameSection />
       </Suspense>
-    </div>
+    </>
   );
 }
