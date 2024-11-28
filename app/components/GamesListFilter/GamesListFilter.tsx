@@ -4,16 +4,18 @@ import { GamesList } from "../GamesList/GamesList";
 import { gameCategoryIcons } from "../../lib/iconsList";
 import { GroupedGames } from "../../types/filterGames";
 import { Filter } from "../Filters/Filter";
+import { ALL_GAMES } from "../../lib/constants";
 
-export const GamesListFilter = ({
-  categories,
-  games,
-}: {
-  categories: string[];
-  games: GroupedGames;
-}) => {
+export const GamesListFilter = ({ games }: { games: GroupedGames }) => {
   const [selectedCategory, setSelectedCategory] = useState("");
+  const allCategories = Object.keys(games);
+  const categories = !selectedCategory
+    ? allCategories
+    : [...allCategories, ALL_GAMES];
   const handleCategory = (category: string) => {
+    if (category === ALL_GAMES) {
+      return setSelectedCategory("");
+    }
     setSelectedCategory(category);
   };
   return (
