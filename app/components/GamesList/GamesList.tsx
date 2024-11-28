@@ -1,9 +1,9 @@
-"use client";
 import React, { useState } from "react";
 import { GameCard } from "../GameCard/GameCard";
 import { GameCardContainer } from "../GameCardContainer/GameCardContainer";
 import { GamesListProps } from "./GamesList.types";
 import { Button } from "../Button/Button";
+import { LOAD_GAMES_COUNT } from "../../lib/constants";
 
 export const GamesList = ({
   games,
@@ -11,9 +11,9 @@ export const GamesList = ({
   icon,
   showAllGames = false,
 }: GamesListProps) => {
-  const [visibleCount, setVisibleCount] = useState(4);
+  const [visibleCount, setVisibleCount] = useState(LOAD_GAMES_COUNT);
   const handleShowMore = () => {
-    setVisibleCount((prevCount) => prevCount + 4);
+    setVisibleCount((prevCount) => prevCount + LOAD_GAMES_COUNT);
   };
 
   return (
@@ -30,10 +30,7 @@ export const GamesList = ({
         </div>
 
         {visibleCount < 30 && !showAllGames && (
-          <Button
-            aria-label="show more games"
-            onClick={handleShowMore}
-          >
+          <Button aria-label="show more games" onClick={handleShowMore}>
             Show More
           </Button>
         )}
