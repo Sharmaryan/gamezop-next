@@ -32,7 +32,7 @@ export const Footer = () => {
             ))}
           </div>
           <p className="text-primary_light font-bold">
-            © 2024 Advergame Technologies Pvt. Ltd. ("ATPL"). Gamezop ® &
+            © 2024 Advergame Technologies Pvt. Ltd. (&quot;ATPL&quot;). Gamezop ® &
             Quizzop ® are registered trademarks of ATPL
           </p>
         </div>
