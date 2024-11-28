@@ -1,5 +1,5 @@
 import { GameCardProps } from "../components/GameCard/GameCard.types";
-import { GroupedGames } from "../types/filterGames";
+import { GroupedGames } from "./filterGames";
 
 export const filterGamesByCategories = (games: GameCardProps[]) => {
     const groupedGames: GroupedGames = {};
