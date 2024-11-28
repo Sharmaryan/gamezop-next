@@ -1,18 +1,9 @@
-const withPWA = require('next-pwa')({
-  dest: 'public',
-  register: true,
-  skipWaiting: true,
-});
+import type { NextConfig } from "next";
 
-const nextConfig = {
-  distDir: "build",
-  reactStrictMode: true,
-  images: {
-    domains: ['static.gamezop.com', 'www.gamezop.com'],
-  },
-  experimental: {
-    appDir: true,
-  },
+const nextConfig: NextConfig = {
+  images:{
+    domains:['static.gamezop.com','www.gamezop.com']
+  }
 };
 
-module.exports = withPWA(nextConfig);
+export default nextConfig;
