@@ -16,6 +16,8 @@ export default {
         tooltip_color: "var(--tooltip-bg-color)",
         success:"var(--success-color)",
         warning:"var(--warning-color)",
+        light:"var(--light-color)",
+        primary_light: "var(--primary-light)"
       },
     },
   },
