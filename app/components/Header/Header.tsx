@@ -3,7 +3,7 @@ import React from "react";
 
 export const Header = () => {
   return (
-    <div className="py-5 sticky top-0 bg-primary z-50 px-6 xl:px-0">
+    <header className="py-5 sticky top-0 bg-primary z-50 px-6 xl:px-0">
       <div className="max-w-[1240px] mx-auto">
         <Image
           src={
@@ -14,6 +14,6 @@ export const Header = () => {
           width={150}
         />
       </div>
-    </div>
+    </header>
   );
 };

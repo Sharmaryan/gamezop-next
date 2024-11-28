@@ -19,7 +19,7 @@ export const GamesListFilter = ({ games }: { games: GroupedGames }) => {
     setSelectedCategory(category);
   };
   return (
-    <div className="bg-background_primary">
+    <main className="bg-background_primary">
       <div className="py-5 sticky top-16 z-50">
         <Filter categories={categories} handleCategory={handleCategory} />
       </div>
@@ -42,6 +42,6 @@ export const GamesListFilter = ({ games }: { games: GroupedGames }) => {
           ))
         )}
       </div>
-    </div>
+    </main>
   );
 };
