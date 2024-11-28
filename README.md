@@ -23,15 +23,19 @@ Leveraged Next.js's fetch on server sided to fetch data on the server and pass i
 Focused on optimizing the app’s performance by enabling automatic static optimization and image optimization with the built-in next/image component.
 Applied best practices for accessibility, including semantic HTML and proper ARIA roles. Also took care of core web vitals.
 
-Desktop
+Desktop 👇
 
 <img width="1703" alt="image" src="https://github.com/user-attachments/assets/cd5901fb-dc89-4c9b-92b6-8b3f56d74b79">
 
-Mobile
+Mobile 👇
 
 <img width="1688" alt="image" src="https://github.com/user-attachments/assets/ac48b806-afd7-45eb-90f5-73188e752aa0">
 
+## Features
 
+- Users can navigate between multiple categories.
+- Lazy loading has been implemented.
+- This application can run on multiple platforms as it supports PWA.
 
 ## Installation
 
