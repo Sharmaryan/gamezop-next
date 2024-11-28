@@ -10,8 +10,7 @@ const GameSection = async () => {
   } = await getData();
 
   const games = filterGamesByCategories(response.games);
-  const categories = Object.keys(games);
-  return <GamesListFilter categories={categories} games={games} />;
+  return <GamesListFilter games={games} />;
 };
 
 export default GameSection;
