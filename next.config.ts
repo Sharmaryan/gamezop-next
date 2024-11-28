@@ -5,7 +5,6 @@ const withPWA = require('next-pwa')({
 });
 
 const nextConfig = {
-  distDir: "build",
   reactStrictMode: true,
   images: {
     domains: ['static.gamezop.com', 'www.gamezop.com'],
